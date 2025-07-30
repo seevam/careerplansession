@@ -12,8 +12,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -22,25 +22,29 @@
             max-width: 1400px;
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.98);
-            border-radius: 25px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.1);
         }
 
         h1 {
             text-align: center;
-            color: #2d3748;
-            margin-bottom: 10px;
-            font-size: 2.5em;
+            color: #0F172A;
+            margin-bottom: 12px;
+            font-size: 2.75em;
+            font-weight: 700;
             animation: fadeInDown 0.8s ease-out;
+            letter-spacing: -0.02em;
         }
 
         .subtitle {
             text-align: center;
-            color: #718096;
-            margin-bottom: 40px;
-            font-size: 1.2em;
+            color: #64748B;
+            margin-bottom: 48px;
+            font-size: 1.125em;
             animation: fadeInDown 0.8s ease-out 0.2s both;
+            font-weight: 500;
         }
 
         .journey-container {
@@ -54,10 +58,11 @@
             top: 60px;
             left: 5%;
             right: 5%;
-            height: 4px;
-            background: linear-gradient(90deg, #3498db 0%, #27ae60 100%);
+            height: 3px;
+            background: linear-gradient(90deg, #3B82F6 0%, #06B6D4 50%, #10B981 100%);
             z-index: 1;
-            opacity: 0.3;
+            opacity: 0.8;
+            border-radius: 2px;
         }
 
         .sessions-wrapper {
@@ -104,45 +109,41 @@
 
         .session-title {
             font-weight: 600;
-            color: #2d3748;
-            margin-bottom: 5px;
-            font-size: 14px;
+            color: #0F172A;
+            margin-bottom: 6px;
+            font-size: 13px;
+            letter-spacing: 0.02em;
         }
 
         .session-subtitle {
-            color: #718096;
-            font-size: 12px;
+            color: #64748B;
+            font-size: 11px;
             max-width: 100px;
             margin: 0 auto;
+            font-weight: 500;
         }
 
-        /* Session Colors */
-        .session:nth-child(1) .session-number { background: #3498db; animation-delay: 0.1s; }
-        .session:nth-child(2) .session-number { background: #9b59b6; animation-delay: 0.2s; }
-        .session:nth-child(3) .session-number { background: #e74c3c; animation-delay: 0.3s; }
-        .session:nth-child(4) .session-number { background: #f39c12; animation-delay: 0.4s; }
-        .session:nth-child(5) .session-number { background: #1abc9c; animation-delay: 0.5s; }
-        .session:nth-child(6) .session-number { background: #34495e; animation-delay: 0.6s; }
-        .session:nth-child(7) .session-number { background: #16a085; animation-delay: 0.7s; }
-        .session:nth-child(8) .session-number { background: #d35400; animation-delay: 0.8s; }
-        .session:nth-child(9) .session-number { background: #8e44ad; animation-delay: 0.9s; }
-        .session:nth-child(10) .session-number { background: #27ae60; animation-delay: 1s; }
-
-        .session:nth-child(10) .session-number {
-            width: 90px;
-            height: 90px;
-            font-size: 28px;
-        }
+        /* Session Colors - Ascend Now Brand Colors */
+        .session:nth-child(1) .session-number { background: linear-gradient(135deg, #3B82F6, #2563EB); animation-delay: 0.1s; }
+        .session:nth-child(2) .session-number { background: linear-gradient(135deg, #06B6D4, #0891B2); animation-delay: 0.2s; }
+        .session:nth-child(3) .session-number { background: linear-gradient(135deg, #10B981, #059669); animation-delay: 0.3s; }
+        .session:nth-child(4) .session-number { background: linear-gradient(135deg, #F59E0B, #D97706); animation-delay: 0.4s; }
+        .session:nth-child(5) .session-number { background: linear-gradient(135deg, #8B5CF6, #7C3AED); animation-delay: 0.5s; }
+        .session:nth-child(6) .session-number { background: linear-gradient(135deg, #EF4444, #DC2626); animation-delay: 0.6s; }
+        .session:nth-child(7) .session-number { background: linear-gradient(135deg, #EC4899, #DB2777); animation-delay: 0.7s; }
+        .session:nth-child(8) .session-number { background: linear-gradient(135deg, #6366F1, #4F46E5); animation-delay: 0.8s; }
+        .session:nth-child(9) .session-number { background: linear-gradient(135deg, #0F172A, #334155); animation-delay: 0.9s; }
 
         /* Detail Panel */
         .detail-panel {
-            background: #f8f9fa;
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 40px;
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+            border-radius: 16px;
+            padding: 48px;
+            margin-top: 48px;
             display: none;
             animation: fadeIn 0.5s ease-out;
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+            border: 1px solid #E2E8F0;
         }
 
         .detail-panel.active {
@@ -155,14 +156,17 @@
         }
 
         .detail-header h2 {
-            color: #2d3748;
-            font-size: 2em;
-            margin-bottom: 10px;
+            color: #0F172A;
+            font-size: 2.25em;
+            margin-bottom: 12px;
+            font-weight: 700;
+            letter-spacing: -0.02em;
         }
 
         .detail-header p {
-            color: #718096;
-            font-size: 1.1em;
+            color: #64748B;
+            font-size: 1.125em;
+            font-weight: 500;
         }
 
         .detail-content {
@@ -173,32 +177,36 @@
 
         .detail-section {
             background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease;
+            padding: 32px;
+            border-radius: 12px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #E2E8F0;
         }
 
         .detail-section:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-color: #CBD5E1;
         }
 
         .detail-section h3 {
-            color: #4a5568;
-            margin-bottom: 15px;
-            font-size: 1.2em;
+            color: #1E293B;
+            margin-bottom: 20px;
+            font-size: 1.25em;
             display: flex;
             align-items: center;
+            font-weight: 600;
+            letter-spacing: -0.01em;
         }
 
         .detail-section.interactive h3 {
-            color: #667eea;
+            color: #3B82F6;
         }
 
         .detail-section.interactive {
-            background: linear-gradient(135deg, #667eea08 0%, #764ba208 100%);
-            border: 2px solid #667eea20;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(99, 102, 241, 0.03) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.2);
         }
 
         .detail-section ul {
@@ -207,58 +215,64 @@
         }
 
         .detail-section li {
-            padding: 10px 0;
-            color: #4a5568;
+            padding: 12px 0;
+            color: #374151;
             position: relative;
-            padding-left: 25px;
+            padding-left: 28px;
             line-height: 1.6;
+            font-weight: 500;
         }
 
         .detail-section li:before {
             content: "•";
             position: absolute;
             left: 0;
-            color: #667eea;
-            font-size: 20px;
-            line-height: 1.2;
+            color: #3B82F6;
+            font-size: 18px;
+            line-height: 1.3;
+            font-weight: 600;
         }
 
         .detail-section.interactive li {
-            background: rgba(255, 255, 255, 0.5);
-            padding: 12px 15px 12px 30px;
-            margin-bottom: 10px;
+            background: rgba(59, 130, 246, 0.05);
+            padding: 16px 20px 16px 36px;
+            margin-bottom: 12px;
             border-radius: 8px;
             cursor: pointer;
             transition: all 0.3s ease;
+            border: 1px solid rgba(59, 130, 246, 0.1);
         }
 
         .detail-section.interactive li:hover {
-            background: white;
-            transform: translateX(5px);
+            background: rgba(59, 130, 246, 0.1);
+            transform: translateX(4px);
+            border-color: rgba(59, 130, 246, 0.2);
         }
 
         .detail-section.interactive li:before {
             content: "🎯";
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .close-details {
             display: block;
-            margin: 30px auto 0;
-            padding: 12px 30px;
-            background: #667eea;
+            margin: 40px auto 0;
+            padding: 14px 32px;
+            background: linear-gradient(135deg, #3B82F6, #2563EB);
             color: white;
             border: none;
-            border-radius: 25px;
+            border-radius: 8px;
             font-size: 16px;
+            font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            letter-spacing: 0.01em;
         }
 
         .close-details:hover {
-            background: #5a67d8;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            background: linear-gradient(135deg, #2563EB, #1D4ED8);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
         }
 
         /* Phases */
@@ -270,26 +284,30 @@
         }
 
         .phase {
-            background: linear-gradient(135deg, #f6f9fc 0%, #e9ecef 100%);
-            border-radius: 15px;
-            padding: 25px;
-            border-left: 5px solid;
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+            border-radius: 12px;
+            padding: 32px;
+            border-left: 4px solid;
             animation: slideInLeft 0.8s ease-out both;
+            border: 1px solid #E2E8F0;
         }
 
-        .phase:nth-child(1) { border-color: #3498db; animation-delay: 1.2s; }
-        .phase:nth-child(2) { border-color: #9b59b6; animation-delay: 1.4s; }
-        .phase:nth-child(3) { border-color: #27ae60; animation-delay: 1.6s; }
+        .phase:nth-child(1) { border-left-color: #3B82F6; animation-delay: 1.2s; }
+        .phase:nth-child(2) { border-left-color: #06B6D4; animation-delay: 1.4s; }
+        .phase:nth-child(3) { border-left-color: #10B981; animation-delay: 1.6s; }
 
         .phase h3 {
-            color: #2d3748;
-            margin-bottom: 10px;
-            font-size: 1.3em;
+            color: #0F172A;
+            margin-bottom: 12px;
+            font-size: 1.375em;
+            font-weight: 600;
+            letter-spacing: -0.01em;
         }
 
         .phase p {
-            color: #718096;
+            color: #64748B;
             line-height: 1.6;
+            font-weight: 500;
         }
 
         /* Animations */
@@ -384,12 +402,6 @@
                 font-size: 18px;
             }
             
-            .session:nth-child(10) .session-number {
-                width: 70px;
-                height: 70px;
-                font-size: 22px;
-            }
-            
             .detail-content {
                 grid-template-columns: 1fr;
             }
@@ -399,7 +411,7 @@
 <body>
     <div class="container">
         <h1>Career Discovery Journey</h1>
-        <p class="subtitle">Click on any session to explore interactive activities</p>
+        <p class="subtitle">Click on any session to explore activities and learning objectives</p>
 
         <div class="journey-container">
             <div class="journey-line"></div>
@@ -447,12 +459,7 @@
                 <div class="session" onclick="showDetails(9)">
                     <div class="session-number">9</div>
                     <div class="session-title">Story Craft</div>
-                    <div class="session-subtitle">Rehearsal</div>
-                </div>
-                <div class="session" onclick="showDetails(10)">
-                    <div class="session-number">10</div>
-                    <div class="session-title">Presentation</div>
-                    <div class="session-subtitle">Final Showcase</div>
+                    <div class="session-subtitle">Career Narrative</div>
                 </div>
             </div>
         </div>
@@ -468,7 +475,7 @@
             </div>
             <div class="phase">
                 <h3>Phase 3: Future Ready</h3>
-                <p>Sessions 8-10 prepare students for the changing world of work and culminate in their career story presentation.</p>
+                <p>Sessions 8-9 prepare students for the changing world of work and culminate in their career story presentation.</p>
             </div>
         </div>
 
@@ -483,132 +490,98 @@
                 title: "Discovering Your Strengths, Values, Beliefs & Interests",
                 subtitle: "Understanding who you are at your core",
                 content: {
-                    "Interactive Activities": [
-                        "Digital Values Card Sort: Drag-and-drop 30 value cards into 'Always True', 'Sometimes', 'Not Really' buckets",
-                        "Live Collage Builder: Use Canva/Jamboard to create real-time strengths collage together",
-                        "Time Loss Activity: Interactive timer game - 'What makes you lose track of time?'",
-                        "Strengths Mind Map: Collaborative Miro/Mural board connecting strengths to real experiences",
-                        "3-Word Cloud: Generate word cloud from personality traits using Mentimeter"
+                    "Core Activities": [
+                        "Values & Beliefs Discovery: Sort core values into tiers and identify top 3-5 personal values",
+                        "Passion & Interest Inventory: Respond to prompts to uncover interests and natural curiosities",
+                        "Strengths & Interests Collage (Homework): Create visual representation using symbols, quotes, and colors"
                     ],
-                    "Key Activities": [
-                        "Who Am I? Icebreaker activity",
-                        "Review MBTI & Holland test results",
-                        "Values card sort exercise",
-                        "Passion & interest inventory",
-                        "Creating connections between traits"
+                    "Learning Objectives": [
+                        "Articulate core personal values and beliefs",
+                        "Engage in reflective conversation around passions and interests", 
+                        "Recognize and express personal identity through creative reflection"
                     ],
-                    "Deliverables": [
-                        "Strengths & Interests Collage",
-                        "Top 3-5 personal values identified",
-                        "Initial self-discovery insights document"
-                    ],
-                    "Pre-work Required": [
-                        "Complete MBTI personality test",
-                        "Complete Holland's RIASEC test"
+                    "Interactive Elements": [
+                        "Digital values card sorting with tier ranking",
+                        "Interest discovery questionnaire with real-time insights",
+                        "Creative collage builder using digital tools"
                     ]
                 }
             },
             2: {
                 title: "Understanding Career Clusters & Pathways",
-                subtitle: "Exploring the 16 career clusters and how work is organized",
+                subtitle: "Exploring the 16 career clusters and how careers connect to interests",
                 content: {
-                    "Interactive Activities": [
-                        "Career Cluster Wheel Spin: Interactive wheel to explore random clusters & discuss",
-                        "Job vs Career Sorting Game: Drag examples into correct categories with timer",
-                        "Career Match Quiz: Gamified quiz matching student traits to top 3 clusters",
-                        "Virtual Career Safari: Screen-shared exploration of Forage/O*NET with guided discovery",
-                        "Venn Diagram Builder: Interactive tool comparing job/career/vocation/passion",
-                        "Career Day in Life Videos: Watch & discuss 2-min career snapshots"
+                    "Core Activities": [
+                        "Career Cluster Mapping: Explore 16 career clusters and connect them to personal interests and strengths",
+                        "Concept Breakdown Role Match: Distinguish between jobs, careers, vocations, passions, and hobbies using guided prompts",
+                        "Career Snapshot Exploration (Homework): Research and creatively present 3 careers aligned to interests"
                     ],
-                    "Key Activities": [
-                        "Explore 16 Career Clusters overview",
-                        "Understand job vs career vs vocation",
-                        "Match personal traits to clusters",
-                        "Research specific careers in depth"
+                    "Learning Objectives": [
+                        "Understand the structure of Career Clusters and how they relate to personal traits",
+                        "Compare key terms and clarify long-term professional direction",
+                        "Explore specific career paths in detail using digital media"
                     ],
-                    "Deliverables": [
-                        "Career Snapshot Exploration",
-                        "3 careers researched in detail",
-                        "Mini presentation or blog post"
-                    ],
-                    "Homework": [
-                        "Complete TypeFinder assessment",
-                        "Complete DISC assessment"
+                    "Interactive Elements": [
+                        "Interactive career cluster wheel with personal trait matching",
+                        "Guided exploration of job vs career vs vocation concepts",
+                        "Digital career research and presentation tools"
                     ]
                 }
             },
             3: {
                 title: "Career Personality & Work Styles",
-                subtitle: "Understanding how you work best",
+                subtitle: "Understanding how personality connects to career preferences",
                 content: {
-                    "Interactive Activities": [
-                        "Personality Avatar Creator: Build visual avatar representing DISC/TypeFinder traits",
-                        "Virtual Office Tour: Interactive slides showing different work environments to rate",
-                        "Work Style Slider Tool: Adjust sliders (solo↔team, structured↔flexible, etc.)",
-                        "Scenario Challenge Cards: React to workplace scenarios based on personality type",
-                        "Team Builder Simulation: Match different personalities to create balanced teams",
-                        "Day-in-the-Life Scheduler: Design ideal workday based on personality preferences"
+                    "Core Activities": [
+                        "DISC Personality Analysis: Reflect on DISC results to understand dominant personality traits and work environments",
+                        "Personality–Career Matching: Match personality profiles (DISC + TypeFinder) to 3 careers previously researched"
                     ],
-                    "Key Activities": [
-                        "Review DISC & TypeFinder results",
-                        "Analyze work environment preferences",
-                        "Match personality to career choices",
-                        "Explore personality diversity in workplace"
+                    "Learning Objectives": [
+                        "Identify and articulate preferred work styles and environments",
+                        "Connect personality results with career preferences"
                     ],
-                    "Deliverables": [
-                        "Personality-Environment Fit Reflection",
-                        "Work style preferences identified",
-                        "Career alignment analysis"
+                    "Interactive Elements": [
+                        "DISC personality deep-dive with work environment analysis",
+                        "Career-personality compatibility assessment tool",
+                        "Visual mapping of personality traits to career choices"
                     ]
                 }
             },
             4: {
                 title: "Career Pathways & Education Planning",
-                subtitle: "Mapping your academic journey to career goals",
+                subtitle: "Mapping career goals to educational pathways",
                 content: {
-                    "Interactive Activities": [
-                        "College Journey Map: Drag milestones onto timeline from HS to career",
-                        "Major Match Game: Speed matching careers to potential majors with scoring",
-                        "Virtual Campus Tours: Quick virtual tours of 3 universities with different vibes",
-                        "Course Catalog Explorer: Browse real course descriptions for chosen majors",
-                        "Milestone Planner: Interactive Gantt chart for academic & extracurricular goals",
-                        "Choose Your Adventure College Path: Decision tree game exploring different routes"
+                    "Core Activities": [
+                        "Career–College Path Builder: Map one career to its matching college majors, universities, and other milestones",
+                        "Major-to-Career Exploration: Explore how college majors connect to professions and explore alternatives"
                     ],
-                    "Key Activities": [
-                        "Understanding university pathways",
-                        "Connecting careers to college majors",
-                        "Building education roadmap",
-                        "Identifying key milestones"
+                    "Learning Objectives": [
+                        "Understand the role of college in reaching career goals",
+                        "Identify majors and educational paths for top careers"
                     ],
-                    "Deliverables": [
-                        "University Route to Career Readiness",
-                        "Visual career roadmap",
-                        "Major/minor recommendations"
+                    "Interactive Elements": [
+                        "Visual career-to-college pathway mapping tool",
+                        "Major exploration with career outcome analysis",
+                        "University research and milestone planning interface"
                     ]
                 }
             },
             5: {
                 title: "Developing a Career Action Plan",
-                subtitle: "Turning dreams into actionable steps",
+                subtitle: "Creating actionable steps toward career goals",
                 content: {
-                    "Interactive Activities": [
-                        "SMART Goal Builder: Fill-in-the-blank template with real-time feedback",
-                        "Skills Gap Analyzer: Visual spider chart comparing current vs. needed skills",
-                        "Goal Timeline Slider: Interactive timeline to place and adjust goals",
-                        "Achievement Badge Designer: Create visual badges for future accomplishments",
-                        "Resource Connector: Match goals to specific online courses/programs/mentors",
-                        "Action Plan Dashboard: Build personalized Notion/Trello board together"
+                    "Core Activities": [
+                        "Goal Card Builder: Turn each SMART goal into a digital card with milestones and motivation triggers",
+                        "Career Quest Tracker: Chart a step-by-step 'quest line' toward career goals with short actions and rewards"
                     ],
-                    "Key Activities": [
-                        "Creating SMART goals",
-                        "Skill gap analysis",
-                        "Building action timeline",
-                        "Identifying resources & support"
+                    "Learning Objectives": [
+                        "Break goals into visual and motivational components",
+                        "Plan multi-step career readiness journey using gamified language"
                     ],
-                    "Deliverables": [
-                        "Career Action Plan document",
-                        "Short & long-term SMART goals",
-                        "Skills development tracker"
+                    "Interactive Elements": [
+                        "SMART goal card creation with visual design tools",
+                        "Gamified career planning with quest-like progression",
+                        "Milestone tracking with reward system integration"
                     ]
                 }
             },
@@ -616,124 +589,73 @@
                 title: "Building Your Professional Identity",
                 subtitle: "Creating your digital professional presence",
                 content: {
-                    "Interactive Activities": [
-                        "Google Yourself Challenge: Live search & discuss digital footprint",
-                        "LinkedIn Mad Libs: Fill-in guided templates for headline & summary",
-                        "Personal Brand Board: Create mood board with colors, fonts, imagery",
-                        "Professional Photo Shoot Tips: Virtual background testing & posing practice",
-                        "3-Word Brand Generator: Word association game to find brand words",
-                        "Bio Builder Workshop: Real-time collaborative writing with instant feedback"
+                    "Core Activities": [
+                        "Profile Makeover Game: Critique and improve example student LinkedIn profiles",
+                        "Identity Badge Creator: Create a personal badge with icons and color schemes to represent 3-word brand",
+                        "LinkedIn Profile Builder: Draft headline, summary, and skills section for a student-friendly profile"
                     ],
-                    "Key Activities": [
-                        "Online presence audit",
-                        "Creating LinkedIn profile",
-                        "Developing professional bio",
-                        "3-word personal brand"
+                    "Learning Objectives": [
+                        "Learn digital self-presentation through analysis",
+                        "Visualize personal brand through symbolic expression",
+                        "Develop a polished digital professional presence"
                     ],
-                    "Deliverables": [
-                        "LinkedIn profile created/updated",
-                        "100-word professional bio",
-                        "Digital identity foundation"
+                    "Interactive Elements": [
+                        "LinkedIn profile analysis and improvement workshop",
+                        "Personal branding badge design tool",
+                        "Professional profile creation with guided templates"
                     ]
                 }
             },
             7: {
-                title: "Interviewing Professionals",
-                subtitle: "Learning from real-world experiences",
+                title: "Interviewing Professionals – Insights from the Field",
+                subtitle: "Learning from real-world career experiences",
                 content: {
-                    "Interactive Activities": [
-                        "Question Card Deck: Sort & rank pre-made questions, then customize",
-                        "Interview Role-Play: Practice with tutor playing professional",
-                        "Mock Interview Recording: Record practice & review together",
-                        "Podcast Producer: Frame interview as mini-podcast episode",
-                        "LinkedIn Outreach Simulator: Practice writing connection requests",
-                        "Insight Synthesizer: Create visual map of key takeaways post-interview"
+                    "Core Activities": [
+                        "Job Journey Detective: Piece together a mystery career path from fictional clues (jobs, degrees, decisions)",
+                        "Career Interview Simulation: Draft and ask questions to a live guest, video, or tutor roleplay"
                     ],
-                    "Key Activities": [
-                        "Preparing interview questions",
-                        "Conducting informational interview",
-                        "Active listening & note-taking",
-                        "Processing insights"
+                    "Learning Objectives": [
+                        "Understand nonlinear and complex career paths",
+                        "Build curiosity, research skills, and confidence in real-world conversation"
                     ],
-                    "Deliverables": [
-                        "Professional Profile Card",
-                        "5 custom interview questions",
-                        "Key insights documented"
+                    "Interactive Elements": [
+                        "Mystery career path puzzle-solving activity",
+                        "Professional interview practice with guided question development",
+                        "Real-world conversation skills building through simulation"
                     ]
                 }
             },
             8: {
                 title: "Navigating the Future of Work",
-                subtitle: "Preparing for a changing world",
+                subtitle: "Preparing for evolving career landscapes",
                 content: {
-                    "Interactive Activities": [
-                        "Future Job Designer: Create a job posting for 2040 using trend insights",
-                        "AI Impact Simulator: Explore how AI might change chosen careers",
-                        "Remote Work Setup Designer: Build ideal remote workspace virtually",
-                        "Trend Tracker Dashboard: Explore live data on job market changes",
-                        "Adaptability Challenge: Scenario-based game with sudden career pivots",
-                        "Time Capsule Creator: Record video/write letter to future self"
+                    "Core Activities": [
+                        "Evolve Your Career: Forecast how 3 favorite careers might evolve based on global trends"
                     ],
-                    "Key Activities": [
-                        "Exploring work trends (AI, remote, gig)",
-                        "Future-proofing chosen careers",
-                        "Building adaptability mindset",
-                        "Personal resilience reflection"
+                    "Learning Objectives": [
+                        "Understand how careers change and what skills will matter"
                     ],
-                    "Deliverables": [
-                        "Future Letter to Self",
-                        "Career evolution analysis",
-                        "Change-readiness insights"
+                    "Interactive Elements": [
+                        "Career evolution forecasting tool with trend analysis",
+                        "Future skills identification and planning workshop",
+                        "Global trends impact assessment on chosen career paths"
                     ]
                 }
             },
             9: {
                 title: "Crafting Your Career Story",
-                subtitle: "Preparing to share your journey",
+                subtitle: "Building your personal narrative for presentations",
                 content: {
-                    "Interactive Activities": [
-                        "Story Arc Builder: Drag story elements into hero's journey template",
-                        "Mission Statement Generator: Mad libs style builder with word banks",
-                        "Presentation Karaoke: Practice with random slides for confidence",
-                        "Elevator Pitch Timer: 30-second version with countdown clock",
-                        "Voice Modulation Practice: Record different tones/paces & compare",
-                        "Peer Feedback Simulator: Role-play different audience reactions"
+                    "Core Activities": [
+                        "Career Story Builder: Organize and rehearse a full narrative about identity, interests, and plans"
                     ],
-                    "Key Activities": [
-                        "Structuring career narrative",
-                        "Writing mission statement",
-                        "Rehearsing presentation",
-                        "Receiving coaching feedback"
+                    "Learning Objectives": [
+                        "Build storytelling skills for college, interviews, and presentations"
                     ],
-                    "Deliverables": [
-                        "Complete story outline",
-                        "Personal mission statement",
-                        "Presentation materials ready"
-                    ]
-                }
-            },
-            10: {
-                title: "Career Story Presentations & Wrap-Up",
-                subtitle: "Celebrating your journey and future",
-                content: {
-                    "Interactive Activities": [
-                        "Virtual Stage Setup: Choose backgrounds, test tech, warm-up exercises",
-                        "Presentation Bingo: Engagement game for peer presentations",
-                        "Real-time Reaction Feed: Live emoji reactions during presentations",
-                        "Screenshot Moments: Capture key slides for digital portfolio",
-                        "Virtual Celebration: Confetti, certificates, and achievement badges",
-                        "Pass the Torch Video: Record advice for future program participants"
-                    ],
-                    "Key Activities": [
-                        "Delivering final presentation",
-                        "Sharing career journey",
-                        "Peer feedback & celebration",
-                        "Program reflection"
-                    ],
-                    "Final Deliverables": [
-                        "5-6 minute career story presentation",
-                        "Complete portfolio of work",
-                        "Future action commitments"
+                    "Interactive Elements": [
+                        "Narrative structure builder with guided storytelling framework",
+                        "Presentation practice with feedback integration",
+                        "Personal story organization and rehearsal tools"
                     ]
                 }
             }
@@ -760,7 +682,7 @@
             `;
             
             for (const [section, items] of Object.entries(details.content)) {
-                const isInteractive = section === 'Interactive Activities';
+                const isInteractive = section === 'Interactive Elements';
                 contentHTML += `
                     <div class="detail-section ${isInteractive ? 'interactive' : ''}">
                         <h3>${section}</h3>
